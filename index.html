@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="phone-book">
+        <h1>Phone Book</h1>
+        <input type="text" id="search" placeholder="Search contacts...">
+        <div id="contact-list"></div>
+        <button id="add-contact">Add Contact</button>
+        <button id="clear-contacts">Clear All Contacts</button>
+    </div>
+
+    <!-- Modal for Add/Edit Contact -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title">Add Contact</h2>
+            <input type="text" id="contact-name" placeholder="Name">
+            <div id="name-error" class="error-message"></div> <!-- הודעת שגיאה לשם -->
+            <input type="email" id="contact-email" placeholder="Email">
+            <input type="text" id="contact-location" placeholder="Location">
+            <input type="text" id="contact-phone" placeholder="Phone">
+            <div id="phone-error" class="error-message"></div> <!-- הודעת שגיאה לטלפון -->
+            <button id="save-contact">Save Contact</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
